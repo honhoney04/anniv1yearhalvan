@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy First Anniversary</title>
+    <style>
+        :root {
+            --primary-color: #ff9aa2;
+            --secondary-color: #ffdac1;
+            --accent-color: #c7ceea;
+            --text-color: #555;
+            --bg-color: #fff;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--bg-color);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            height: 150px; /* Set uniform height for all images */
+            object-fit: cover; /* Ensure the image fills the area without distortion */
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote {
+            font-style: italic;
+            color: var(--primary-color);
+            margin: 2rem 0;
+            font-size: 1.5rem;
+        }
+
+        .cta {
+            margin: 3rem 0;
+        }
+
+        .cta button {
+            background: var(--accent-color);
+            color: var(--bg-color);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+        }
+
+        .cta button:hover {
+            background: var(--primary-color);
+        }
+
+        footer {
+            background: var(--secondary-color);
+            text-align: center;
+            padding: 1rem;
+            color: var(--text-color);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy First Anniversary!</h1>
+        <p>Celebrating Our Love and Beautiful Moments Together</p>
+    </header>
+
+    <div class="container">
+        <div class="photo-gallery">
+            <img src="img/anniversary1.jpg.jpg" alt="Anniversary moment 1">
+            <img src="img/anniversary2.jpg.jpg" alt="Anniversary moment 2">
+            <img src="img/anniversary3.jpg.jpg" alt="Anniversary moment 3">
+            <img src="img/anniversary4.jpg.jpg" alt="Anniversary moment 4">
+        </div>
+
+        <p class="quote">"Happy first anniversary, my love, Delvan! A year ago, we started this journey together, and it’s been filled with unforgettable memories, from late-night thesis sessions to our favorite food moments like bakaran, jasuke slowmo, ayam balap. We've shared dreams of our future—getting jobs after graduation, building a life together, and maybe even taking that next big step into marriage. I’m so grateful to have you by my side through every challenge and triumph. Your love and support make me believe in the beautiful future we’ll create together. As we celebrate this first year, my heart is filled with excitement for all that’s yet to come—our next chapter, and the many more anniversaries we'll share as we continue to build this life and love"</p>
+
+        <div class="cta">
+            <button onclick="alert('Here\'s to many more years together!')">Celebrate With Us</button>
+        </div>
+    </div>
+
+    <footer>
+        Made with 💖 for our special day by Hani
+    </footer>
+</body>
+</html>
